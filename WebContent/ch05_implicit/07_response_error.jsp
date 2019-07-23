@@ -4,19 +4,15 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Response Objects</title>
+<title>response.sendError</title>
 </head>
-
 <body>
-
-	<form action="05_response_result.jsp" method="post" >
-
-		<p> 아 이 디 : <input type="text" name="id">
-		<p> 비밀번호 : <input type="text" name="passwd">
-		<p> <input type="submit" value="전송">
-
-	</form>
-
+	
+	<% 
+		
+		response.sendError(404, "요청 페이지를 찾을 수 없당께");
+	
+	%>
+	
 </body>
-
 </html>
