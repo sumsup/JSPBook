@@ -27,12 +27,15 @@
 			
 			FileItem fileItem = (FileItem) params.next(); //  
 		
-			if (!fileItem.isFormField()) {
+			if (!fileItem.isFormField()) { // isFormField() : 요청 파라미터가 파일이 아닌 일반 데이터인 경우 true 반환.
 				
-				String fileName = fileItem.getName();
-				fileName = fileName.substring(fileName.lastIndexOf("\\") + 1);
-				File file = new File(fileUploadPath + "/" + fileName);
-				fileItem.write(file);
+				String fileName = fileItem.getName(); // 파일 이름을 가져오고.
+				fileName = fileName.substring(fileName.lastIndexOf("\\") + 1); // 
+				
+				File file = new File(fileUploadPath + "/" + fileName); 
+				// 파일 업로드 경로 뒤에 / 표시를 붙여주고 뒤에 파일 이름을 넣어서 파일 인스턴스를 만들고.
+				
+				fileItem.write(file); // 다운로드 한다.
 				
 			}
 			
