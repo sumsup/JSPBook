@@ -25,7 +25,7 @@
 		String name = (String) params.nextElement();
 		String value = multi.getParameter(name);
 		out.println(name + " = " + value + "<br>");
-				
+
 	}
 	
 	out.println("-----------------------------------<br>");
