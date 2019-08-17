@@ -17,12 +17,14 @@
 	
 	<p> 아이디 : <%= person.getId() %>
 	<p> 이  름 : <%= person.getName() %>
+	
 	<%
 		
 		person.setId(20201027);
 		person.setName("홍길동");
 	
 	%>
+	
 	<jsp:include page="05_useBean03_person.jsp" />
 
 </body>
