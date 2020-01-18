@@ -1,6 +1,7 @@
 <%@page import="java.util.Enumeration"%>
 <%@page import="com.oreilly.servlet.multipart.DefaultFileRenamePolicy"%>
 <%@page import="com.oreilly.servlet.MultipartRequest"%>
+<%@page import="java.lang.System" %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -46,7 +47,7 @@
 			<th width="100">파일</th>
 		</tr>
 		<%
-		
+
 			out.print("<tr><td>" + name1 + "</td>");
 			out.print("<td>" + subject1 + "</td>");
 			out.println("<td>" + filename1 + "</td></tr>\n");
