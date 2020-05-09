@@ -41,7 +41,7 @@
 				String fileFieldName = item.getFieldName();
 				String fileName = item.getName();
 				String contentType = item.getContentType();
-				
+
 				out.println("fileName = " + fileName );
 				
 				//fileName = fileName.substring(fileName.lastIndexOf("\\") + 1); // 왜 넣은지 모르겠는 코드.
@@ -50,7 +50,7 @@
 				
 				File file = new File(path + "/" + fileName); // 해당 경로에 파일 인스턴스를 생성.
 				item.write(file);
-				
+
 				out.println("---------------------------------------<br>");
 				out.println("요청 파라미터 이름 : " + fileFieldName + "<br>");
 				out.println("저장 파일 이름 : " + fileName + "<br>");

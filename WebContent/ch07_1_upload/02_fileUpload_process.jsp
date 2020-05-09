@@ -13,8 +13,7 @@
 <body>
 
 	<%
-	
-		MultipartRequest multi = new MultipartRequest(request, "c:\\zzz\\upload", 5*1024*1024, "utf-8", 
+		MultipartRequest multi = new MultipartRequest(request, "c:\\zzz\\upload", 5*1024*1024, "utf-8",
 				new DefaultFileRenamePolicy());
 		// 여기서 첫번째 파라미터가 multiPart/form-data 요청을 받는다.
 	
@@ -37,7 +36,6 @@
 		
 		String file3 = (String) files.nextElement();
 		String filename3 = multi.getFilesystemName(file3);
-	
 	%>
 	
 	<table border="1">
@@ -59,7 +57,7 @@
 			out.print("<tr><td>" + name3 + "</td>");
 			out.print("<td>" + subject3 + "</td>");
 			out.println("<td>" + filename3 + "</td></tr>\n");
-		
+
 		%>
 	</table>
 	
